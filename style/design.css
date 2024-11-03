@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-style: italic;
+  }  
+
+/* shared style */
+.text-primary{
+    color: #E6533C;
+}
+.background-color{
+    background-color: black;
+}
+
+/* navbar */
+.nav-title{
+    font-size: 1.75rem;
+    font-weight: bolder;
+    font-style: italic;
+}
+.menu-icon, .menu-checkbox {
+    display: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.nav-items{
+    list-style: none;
+}
+.nav-lists{
+    display: flex;
+    gap: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 27px;
+    padding: 9px;
+}
+#navlu{
+    border: 2px solid #E6533C;
+    border-radius: 30px;
+    padding: 6px 14px 6px 14px;
+    background-color: #E6533C;
+    color: white;
+    font-weight: 500;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
+}
+
+.navbar, .banner{
+    max-width: 1640px;
+    margin:0 auto;
+    background-color: #1b1b1b;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 20px; */
+}
+.banner-content{
+    max-width: 400px;
+    padding-left: 60px;
+}
+.banner-title{
+    font-size: 4.0rem;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+.shape{
+    font-family: cursive;
+    font-style: italic;
+}
+.banner-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.overlay-box {
+    position: absolute;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+#workout{
+    font-weight: 200;
+    color:#FFFFFFA6;
+}
+#video{
+    font-weight: 200;
+    color:#FFFFFFA6;
+}
+.overlay-top-right {
+    top: 270px;
+    right: 140px;
+    background-color: rgba(50, 50, 50, 0.7);
+}
+.overlay-bottom-left {
+    bottom: 100px;
+    left: 970px;
+    background-color:  rgba(50, 50, 50, 0.7);
+}
+.btn-primary{
+    border: 2px solid #E6533C;
+    border-radius: 30px;
+    padding: 8px 17px 8px 17px;
+    background-color: #E6533C;
+    color: white;
+    font-weight: 500;
+}
+#btnn{
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+@media screen and (max-width:576px){
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color:  darkgray;
+    }
+    .nav-lists {
+        display: none;
+        flex-direction: column;
+        /* position: relative; */
+    }
+    #menu-toggle:checked ~ .nav-lists {
+        display: flex;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .Habits, .habit-container{
+        flex-direction: column;
+        max-width: 600px;
+    }
+}
