@@ -7,7 +7,7 @@
     font-weight: 400;
     font-style: normal;
 }
-.body{
+body{
     font-family: 'Inter', sans-serif;
     width: 100%;
     margin: 0 auto;
@@ -403,8 +403,76 @@ td, th {
     cursor: pointer;
     margin-top: 15px;
 }
+/* meet our time */
 
- 
+.Meet-our-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.traine-des{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255);
+    margin-top: 80px;
+}
+.team-title{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.team-pr{
+    color:rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+.team-member {
+    background-color: #3030308A;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+}
+.team-member-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+}
+.team-member-info h4{
+    margin: 0;
+}
+.team-member-info p{
+    margin: 0;
+    font-size: 0.75rem;
+}
+.team-member.jerome {
+    background-image: url('/images/trainer1.png');
+}
+.team-member.cameron {
+    background-image: url('/images/trainer2.png');
+}
+.team-member.darrell {
+    background-image: url('/images/trainer3.png');
+}
+.team-member.dianne {
+    background-image: url('/images/trainer4.png');
+}
+.team-member.cody {
+    background-image: url('/images/trainer5.png');
+}
+.team-member.theresa {
+    background-image: url('/images/trainer6.png');
+}
 @media screen and (max-width:576px){
     .menu-icon {
         display: block;
@@ -458,5 +526,14 @@ td, th {
     }
     .input-group {
         flex-direction: column;
+    }
+    .team-grid {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
+    .team-member {
+        height: 250px;
+        padding: 25px 30px 25px 30px;
+        width: 60%;
     }
 }
